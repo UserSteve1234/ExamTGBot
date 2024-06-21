@@ -15,9 +15,9 @@ import logging
 import requests
 # from env import KEY, EDAMAM_KEY, EDAMAM_ID
 
-TELEGRAM_TOKEN = KEY
-EDAMAM_APP_ID = EDAMAM_ID
-EDAMAM_APP_KEY = EDAMAM_KEY
+# TELEGRAM_TOKEN = KEY
+# EDAMAM_APP_ID = EDAMAM_ID
+# EDAMAM_APP_KEY = EDAMAM_KEY
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levellevelname)s - %(message)s',
