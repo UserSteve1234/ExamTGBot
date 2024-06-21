@@ -53,7 +53,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 async def enter_recipe_name(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     dish_name = update.message.text
     
-    url = f'https://api.edamam.com/search?q={dish_name}&app_id={EDAMAM_APP_ID}&app_key={EDAMAM_APP_KEY}'
+    url = f'https://api.edamam.com/search?q={dish_name}&app_id={EDAMAM_ID}&app_key={EDAMAM_KEY}'
     
     try:
         response = requests.get(url)
@@ -84,7 +84,7 @@ def main_function() -> None:
     menu_handler = MessageHandler(filters.TEXT & ~filters.COMMAND, handle_menu)
     enter_recipe_handler = MessageHandler(filters.TEXT & ~filters.COMMAND, enter_recipe_name)
     
-    app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
+    app = ApplicationBuilder().token(KEY).build()
     
     app.add_handler(start_handler)
     app.add_handler(main_handler)
