@@ -13,7 +13,7 @@ from telegram.ext import (
 )
 import logging
 import requests
-from env import KEY, EDAMAM_KEY, EDAMAM_ID
+# from env import KEY, EDAMAM_KEY, EDAMAM_ID
 
 TELEGRAM_TOKEN = KEY
 EDAMAM_APP_ID = EDAMAM_ID
