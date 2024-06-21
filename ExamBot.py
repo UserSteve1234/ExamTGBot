@@ -20,9 +20,10 @@ EDAMAM_APP_ID = EDAMAM_ID
 EDAMAM_APP_KEY = EDAMAM_KEY
 
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levellevelname)s - %(message)s',
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
+
 
 ENTER_RECIPE_NAME = 0
 
